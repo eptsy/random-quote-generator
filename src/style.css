@@ -14,6 +14,9 @@ body{
     width: 70vw;
     background-color: rgba(245, 245, 245, 0.605);
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 #quote{
     font-size: 1.2rem;
@@ -21,9 +24,6 @@ body{
 #author{
     font-size: 1.2rem;
     font-weight: 600;
-}
-.buttons{
-    margin-top: 15px;
 }
 #copy, #next{
     padding: 5px 50px;
@@ -33,4 +33,10 @@ body{
     border: 3px solid lavender;
     cursor: pointer;
     font-weight: 500;
+}
+#tag{
+    background-color: seagreen;
+    width: fit-content;
+    padding: 5px 10px;
+    color: lavender;
 }
