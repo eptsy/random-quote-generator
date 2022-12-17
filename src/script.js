@@ -1,10 +1,12 @@
+// Fetching Quote
 function quote() {
   fetch("https://api.quotable.io/random")
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      document.getElementById('copy').innerHTML = 'Copy <i class="fa-regular fa-copy"></i>';
       document.getElementById("quote").innerHTML = data["content"];
       document.getElementById("author").innerHTML = "— " + data["author"];
+      document.getElementById('tag').innerHTML = data['tags'][0]
     });
 }
 
